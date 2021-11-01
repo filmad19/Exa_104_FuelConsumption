@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Fuel Consumption"
+        android:textColor="#00BCD4"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvFuel"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvTitle"
+        android:gravity="bottom"
+        android:text="@string/fuel"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etInputFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/tvFuel"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1.0" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvFuel"
+        android:gravity="bottom"
+        android:text="@string/distance"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etInputDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInputFuel"
+        android:layout_toRightOf="@id/tvDistance"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDistance"
+        android:text="CALCULATE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/btCalculate"
+        android:gravity="bottom|center_horizontal"
+        android:textSize="20sp" />
+</RelativeLayout>

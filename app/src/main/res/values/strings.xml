@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exa_104_FuelConsumption</string>
+    <string name="fuel">Fuel in liter:</string>
+    <string name="distance">Distance in km:</string>
+    <string name="output">Consumption: %.2f l/km</string>
+    <string name="invalid_input">Invalid input!</string>
+</resources>
